@@ -18,7 +18,8 @@ weatherForm.addEventListener('submit', (e) => {
             // console.log(data.location);
             console.log(data.forecastData);
             messageOne.textContent = `Location : ${data.location}`;
-            messageTwo.textContent = `${data.forecastData.desc} Temperature is ${data.forecastData.temp} degree celcius`;
+            messageTwo.textContent = `At ${data.forecastData.time}, ${data.forecastData.desc}. Temperature is ${data.forecastData.temp} degree celcius
+            and Humidity is ${data.forecastData.humidity}`;
         })
     })
 
